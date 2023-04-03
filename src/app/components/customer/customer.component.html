@@ -1,0 +1,21 @@
+<div
+  class="alert alert-primary"
+  role="alert"
+  style="text-align: center; margin-top: 20px"
+>
+  CUSTOMERS
+</div>
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">Id</th>
+            <th scope="col">User Name</th>
+            <th scope="col">Company Name</th>
+        </tr>
+    </thead>
+    <tr *ngFor="let customer of customers">
+        <th scope="row">{{customer.customerId }}</th>
+        <td>{{customer.customerName}}</td>
+        <td>{{customer.companyName}}</td>
+    </tr>
+</table>
